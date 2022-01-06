@@ -13,7 +13,7 @@ RUN apk add --no-cache git \
     && rm libtorch-shared-with-deps-latest.zip \
     && cd /minecraft_upscale \
     && mkdir build \
-    && cmake -DCMAKE_PREFIX_PATH=/libtorch \
-    && cmake -S . -B build \
+    && cmake -DCMAKE_PREFIX_PATH=/libtorch /minecraft_upscale \
+    && cmake --build /build \
     && make --directory build \
     && apk del build_dependencies
