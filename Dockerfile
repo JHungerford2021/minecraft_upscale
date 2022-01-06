@@ -11,7 +11,7 @@ RUN apk add --no-cache git \
     && wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip \
     && unzip libtorch-shared-with-deps-latest.zip \
     && rm libtorch-shared-with-deps-latest.zip \
-    && cd /pandemic_game_simulator \
+    && cd /minecraft_upscale \
     && mkdir build \
     && cmake -S . -B build \
     && make --directory build \
