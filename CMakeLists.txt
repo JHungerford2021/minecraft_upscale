@@ -11,3 +11,5 @@ target_include_directories(minecraft_upscale PUBLIC
                           )
 
 set_property(TARGET minecraft_upscale PROPERTY CXX_STANDARD 20)
+
+message("${CMAKE_PREFIX_PATH}")
